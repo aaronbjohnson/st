@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static char *font2[] = { "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -111,9 +111,9 @@ float alpha = 0.8;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
-/* Terminal colors (16 first used in escape sequence) */
+// Terminal colors (16 first used in escape sequence) 
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#282828", 
 	"#cc241d",
 	"#98971a",
 	"#d79921",
@@ -130,11 +130,15 @@ static const char *colorname[] = {
 	"#8ec07c",
 	"#ebdbb2",
 	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	// more colors can be added after 255 to use with DefaultXX 
+	// 256 -> cursor 
+	"#add8e6", 
+	// 257 -> rev cursor
+	"#555555",
+// 258 -> bg
+	"#282828",  
+// 259 -> fg
+	"#ebdbb2",  
 };
 
 
@@ -147,7 +151,6 @@ unsigned int defaultbg = 258;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 unsigned int background = 258;
-
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -187,6 +190,7 @@ static uint forcemousemod = ShiftMask;
 /*
  * Xresources preferences to load at startup
  */
+
 ResourcePref resources[] = {
 		{ "font",         STRING,  &font },
 		{ "fontalt0",     STRING,  &font2[0] },
