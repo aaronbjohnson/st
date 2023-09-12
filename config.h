@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMonoNL-Light:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMonoNL-Light:pixelsize=12:antialias=true:autohint=true" };
+static char *font = "JetBrainsMonoNL-Light:pixelsize=26:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMonoNL-Light:pixelsize=26:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
